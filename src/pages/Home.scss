@@ -1,0 +1,12 @@
+ion-content {
+    --background: var(--light-brown);
+}
+
+.bg-override {
+    background-color: var(--light-brown);
+}
+
+.ion-color-brown {
+    --ion-color-base: var(--ion-color-brown);
+    --ion-color-base-rgb: var(--ion-color-brown-rgb);
+}

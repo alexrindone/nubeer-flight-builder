@@ -2,6 +2,9 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
+import Flight from './pages/Flight';
+import Loading from './pages/Loading';
+import { DefaultContextProvider } from './DefaultContext';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -23,18 +26,19 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
+    <IonApp>
+      <DefaultContextProvider>
+        <IonReactRouter>
+          <IonRouterOutlet>
+            <Route exact path="/home" render={ props => <Home {...props} />} />
+            {/* <Route exact path="/" render={() => <Redirect to="/home" />} /> */}
+            <Route exact path="/loading" render={ props => <Loading {...props} />} />
+            <Route exact path="/" render={() => <Redirect to="/loading" />} />
+            <Route exact path="/flight" render={ props => <Flight {...props} />} />
+          </IonRouterOutlet>
+        </IonReactRouter>
+      </DefaultContextProvider>
+    </IonApp>
 );
 
 export default App;

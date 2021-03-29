@@ -1,0 +1,17 @@
+.circle {
+    background-color: var(--green-1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin: 0 auto;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    &.green-2 {
+        background-color: var(--green-2);
+    }
+    &.green-3 {
+        background-color: var(--green-3);
+    }
+    &.green-4 {
+        background-color: var(--green-4);
+    }
+}

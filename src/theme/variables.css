@@ -3,6 +3,22 @@ http://ionicframework.com/docs/theming/ */
 
 /** Ionic CSS Variables **/
 :root {
+  /** custom **/
+  --green-1: #26763C;
+  --green-2: #2B8956;
+  --green-3: #4F9668;
+  --green-4: #87A98B;
+  --orange: #E4521D;
+  --brown: #200903;
+  --light-brown: #E4DED0;
+  --blue: #1870D2;
+  --chalkboard: #292929;
+  --chalkboard-rgba: rgba(41, 41, 41, 0.86);
+  --chalk: #ffffff;
+
+  --ion-color-brown: #200903;
+  --ion-color-brown-rgb: 32, 9, 3;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;

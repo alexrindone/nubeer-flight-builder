@@ -1,0 +1,23 @@
+.search-container {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    ion-input {
+        --color: var(--brown);
+        --placeholder-opacity: 1.0;
+    }
+    ion-item {
+        --background: transparent;
+        --border-color: var(--brown);
+        --border-width: 0;
+        --highlight-color-focused: var(--brown);
+    }
+    ion-label {
+        color: var(--brown);
+    }
+    ion-icon {
+        color: var(--brown);
+        --ionicon-stroke-width: 36px;
+    }
+}

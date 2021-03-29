@@ -1,0 +1,19 @@
+ion-item {
+    --background: var(--light-brown);
+}
+
+.selected { 
+    font-style: italic;
+    opacity: 0.8;
+}
+
+ion-text {
+    color: var(--brown);
+    font-size: 18px;
+    p { margin: 0; }
+    .brewery, .style { font-size: 12px; }
+    .abv { 
+        font-size: 12px;
+        text-align: right;
+    }
+}

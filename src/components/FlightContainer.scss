@@ -1,0 +1,16 @@
+.flight-container{
+    width: 100%;
+    margin: 0 auto;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.chalk-txt {
+    color: var(--chalk)
+}
+
+.txt-small {
+    font-size: 12px;
+}

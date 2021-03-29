@@ -1,0 +1,10 @@
+.flight-chalkboard {
+    width: 60%;
+    height: 80%;
+    left: -18px;
+    background: linear-gradient(90deg, var(--chalkboard) 0%, var(--chalkboard-rgba) 100%);
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
